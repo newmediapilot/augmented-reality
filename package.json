@@ -1,0 +1,23 @@
+{
+  "name": "augmented-reality",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install -g local-web-server",
+    "serve": "ws --spa index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newmediapilot/augmented-reality.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newmediapilot/augmented-reality/issues"
+  },
+  "homepage": "https://github.com/newmediapilot/augmented-reality#readme",
+  "dependencies": {
+    "local-web-server": "^2.6.0"
+  }
+}
