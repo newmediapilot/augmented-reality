@@ -14,6 +14,9 @@
 
 <a-scene embedded arjs='sourceType: webcam; matrixCodeType: 3x3; detectionMode: mono_and_matrix; debugUIEnabled: false;'>
 
+
+
+    <!--- image1 --->
     <a-marker type='barcode'
               value='1'>
         <a-image position='0 0 0'
@@ -25,7 +28,27 @@
             <!-- a-image -->
             <!-- a-image -->
         </a-image>
-    </a-marker>
+    </a-marker><!--- /image1 --->
+
+
+
+
+    <!--- image1 --->
+    <a-marker type='barcode'
+              value='2'>
+        <a-image position='0 0 0'
+                 rotation="90 0 -180"
+                 scale="-25 25 25"
+                 transparent="true"
+                 src="./shapes/image2.png">
+            <!-- a-image -->
+            <!-- a-image -->
+            <!-- a-image -->
+        </a-image>
+    </a-marker><!--- /image1 --->
+
+
+
 
 </a-scene>
 
