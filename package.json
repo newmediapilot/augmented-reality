@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "rm -rf dist; mkdir dist; cp index.html ./dist/index.html; cp -R shapes ./dist/shapes; cp -R lib ./dist/lib",
     "install": "npm install -g local-web-server",
     "serve": "ws --spa index.html"
   },
