@@ -16,8 +16,8 @@
         return aMarker;
     };
     app.processData = function () {
-        for (var i = 0; i < data.length; i++) {
-            var url = ['./shapes', data[i]].join('/');
+        for (var i = 1; i <= 62; i++) {
+            var url = './shapes/slide' + i + '.jpg';
             var shape = app.generateShape(url, i);
             element.appendChild(shape);
         }
