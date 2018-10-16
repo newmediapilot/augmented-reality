@@ -17,7 +17,7 @@ aws configure
 ```
 # Deployment instructions
 ```
-rm -rf dist; mkdir dist; cp index.html dist/; cp -R shapes dist/; cp -R lib dist/
+rm -rf dist; mkdir dist; cp index.html dist/; cp data.js dist/; cp main.js dist/; cp -R shapes dist/; cp -R lib dist/
 ```
 # Windows deployment in CMD
 ```
