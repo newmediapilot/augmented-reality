@@ -17,7 +17,7 @@
     };
     app.processData = function () {
         for (var i = 1; i <= 62; i++) {
-            var url = './shapes/slide' + i + '.jpg';
+            var url = './shapes/slide' + i + '.png';
             var shape = app.generateShape(url, i);
             element.appendChild(shape);
         }
