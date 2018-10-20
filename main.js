@@ -8,7 +8,7 @@
         var aImage = document.createElement('a-image');
         aImage.setAttribute('position', '0 0 0');
         aImage.setAttribute('rotation', '90 0 180');
-        aImage.setAttribute('scale', '5 -5 5');
+        aImage.setAttribute('scale', '4.5 -5 5');
         aImage.setAttribute('material', 'opacity: 1;');
         aImage.setAttribute('transparent', 'true');
         aImage.setAttribute('src', url);
