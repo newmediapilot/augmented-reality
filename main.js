@@ -1,5 +1,6 @@
 (function () {
     var app = this;
+    var server = '//newmediapilot.com/victorgad.camera';
     var element = document.getElementsByTagName('a-scene')[0];
     app.generateShape = function (url, index) {
         var aMarker = document.createElement('a-marker');
@@ -17,7 +18,7 @@
     };
     app.processData = function () {
         for (var i = 1; i <= 62; i++) {
-            var url = './shapes/slide' + i + '.png';
+            var url = [server, 'slides/slide' + i + '.png'].join('/');
             var shape = app.generateShape(url, i);
             element.appendChild(shape);
         }

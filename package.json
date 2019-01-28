@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "rm -rf dist; mkdir dist; cp index.html dist/; cp -R shapes dist/; cp -R lib dist/",
+    "deploy": "rm -rf dist && mkdir dist && cp index.html dist && cp -R shapes dist && cp -R lib dist",
     "install": "npm install -g local-web-server",
-    "serve": "ws --spa index.html"
+    "serve": "npm run deploy && ws --spa index.html"
   },
   "repository": {
     "type": "git",
