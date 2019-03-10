@@ -20,7 +20,11 @@ aws configure
 rm -rf dist; mkdir dist; cp index.html dist/; cp data.js dist/; cp main.js dist/; cp -R shapes dist/; cp -R lib dist/
 ```
 # Windows deployment in CMD
+
+Slides are deployed to //newmediapilot.com/victorgad.camera
+
 ```
 aws s3 rm s3://www.victorgad.camera --recursive
 aws s3 cp --recursive C:\Users\SPECTRE\Desktop\newmediapilot\augmented-reality\dist s3://www.victorgad.camera
+aws cloudfront create-invalidation --distribution-id EG7IM1OSH5KOE --paths "/*"
 ```
