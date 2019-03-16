@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update": "git reset --hard origin/master && npm install && node run.js"
+    "update": "git fetch; git pull; git reset --hard origin/master && npm install && node run.js"
   },
   "repository": {
     "type": "git",
