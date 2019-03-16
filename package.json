@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/newmediapilot/augmented-reality#readme",
   "dependencies": {
-    "local-web-server": "^2.6.0",
     "replace-in-file": "^3.4.4"
   }
 }
