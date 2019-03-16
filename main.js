@@ -1,6 +1,6 @@
 (function () {
     var app = this;
-    var server = '//newmediapilot.com/victorgad.camera';
+    var server = '';
     var element = document.getElementsByTagName('a-scene')[0];
     app.generateShape = function (url, index) {
         var aMarker = document.createElement('a-marker');
