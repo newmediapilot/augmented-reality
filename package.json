@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/newmediapilot/augmented-reality#readme",
   "dependencies": {
+    "node-run-cmd": "^1.0.1",
     "replace-in-file": "^3.4.4"
   }
 }

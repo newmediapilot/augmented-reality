@@ -1,4 +1,13 @@
 //
+console.log('git fetch begin');
+const nrc = require('node-run-cmd');
+const commands = [
+    'git reset --hard origin/master',
+    'npm install'
+];
+nrc.run(commands);
+console.log('git fetch complete');
+//
 console.log('replace begin');
 const childProcess = require('child_process');
 const gitRevision = childProcess.execSync('git rev-parse HEAD').toString().trim().substr(0, 7);
