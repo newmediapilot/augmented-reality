@@ -5,7 +5,7 @@ const gitRevision = childProcess.execSync('git rev-parse HEAD').toString().trim(
 const replace = require('replace-in-file');
 const options = {
     files: 'index.html',
-    from: '<!---commitId--->',
+    from: /<!---commitId--->/g,
     to: gitRevision,
 };
 replace.sync(options);
