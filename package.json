@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "rm -rf dist && mkdir dist && cp index.html dist && cp data.js dist && cp main.js dist && cp -R shapes dist && cp -R lib/ dist/",
-    "install": "npm install -g local-web-server",
-    "serve": "npm run deploy && ws --spa index.html"
+    "update": "git reset --hard origin/master && npm install && node run.js"
   },
   "repository": {
     "type": "git",
