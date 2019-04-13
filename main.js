@@ -1,4 +1,10 @@
 (function () {
+    if (window.location.protocol != 'https:') {
+        window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+})();
+
+(function () {
     var app = this;
     var server = '';
     var element = document.getElementsByTagName('a-scene')[0];
