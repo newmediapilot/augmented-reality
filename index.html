@@ -6,8 +6,9 @@
 
     <meta charset="UTF-8">
     <title>victoR gad :: augmented reality</title>
+
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
     
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>=
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
 <body style="margin : 0px; overflow: hidden;">
@@ -28,7 +29,7 @@
         for (var i = 1; i <= 65; i++) {
             var aMarker = document.createElement('a-marker');
             aMarker.setAttribute('type', 'barcode');
-            aMarker.setAttribute('value', i);
+            aMarker.setAttribute('url', `./markers/${i}.png`);
             var aImage = document.createElement('a-image');
             aImage.setAttribute('position', '0 0 0');
             aImage.setAttribute('rotation', '90 0 180');
