@@ -8,40 +8,49 @@
     <title>victoR gad :: augmented reality</title>
 
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    
+
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
 <body style="margin : 0px; overflow: hidden;">
 
-<a-scene embedded arjs>
-
+<a-scene embedded arjs="debugUIEnabled: false;">
     <!-- candidElement pushed here -->
-
     <a-entity camera></a-entity>
 </a-scene>
 
+<script type="text/javascript">
+    (function () {
+        if (window.location.protocol != 'https:') {
+            window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+        }
+    })();
+</script>
 <script type="text/javascript">
     /**
      * define markers and shapes
      */
     (function () {
+        var markerNum = 1;//62
         var aScene = document.querySelector('a-scene');
-        for (var i = 1; i <= 65; i++) {
+        for (var i = 1; i <= markerNum; i++) {
+
             var aMarker = document.createElement('a-marker');
             aMarker.setAttribute('type', 'barcode');
             aMarker.setAttribute('url', `./markers/${i}.png`);
+
             var aImage = document.createElement('a-image');
-            aImage.setAttribute('position', '0 0 0');
+            aImage.setAttribute('position', '0 0 1');
             aImage.setAttribute('rotation', '90 0 180');
             aImage.setAttribute('scale', '4.5 -5 5');
             aImage.setAttribute('material', 'opacity: 1;');
             aImage.setAttribute('transparent', 'true');
             aImage.setAttribute('src', `./markers/slide${i}.png`);
+
             aMarker.appendChild(aImage);
+
             aScene.appendChild(aMarker);
         }
     })();
 </script>
-
 </body>
 </html>
